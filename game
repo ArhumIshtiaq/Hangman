@@ -1,0 +1,25 @@
+using System ;
+using System.Collection.Generic ;
+using System.Linq ;
+using System.Text ;
+using System.Threading.Taks;
+
+namespace CreativeCub
+{
+class Program
+{
+static void Main(string[] args)
+{
+bool a = true ;
+Console.WriteLine("Welcome to Hangman!") ;
+string[] listwords = new string[6] ;
+listwords[0] = "sheep" ;
+listwords[1] = "goat" ;
+listwords[2] = "computer" ;
+listwords[3] = "Pakistan" ;
+listwords[4] = "icecream" ;
+listwords[5] = "dopamine" ;
+Random randGen = new Random();
+var idx = randGen.Next(0, 6);
+string ,mysteryWord = listwords[idx];
+
